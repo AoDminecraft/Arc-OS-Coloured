@@ -1,4 +1,4 @@
  local side = "back"
 term.setTextColor(colors.green)
- print("Redstone Activte")
+ print("Redstone Activted")
  redstone.setOutput(side, true)
