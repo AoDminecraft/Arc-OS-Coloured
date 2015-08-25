@@ -14,8 +14,15 @@ return event, p1, p2, p3, p4, p5
 end
 
 sleep (0.5)
-bground = paintutils.loadImage(".background")
-paintutils.drawImage(bground,1,1)
+term.setTextColor(colors.blue)
+print[[
+    _____                  ________    _________ 
+   /  _  \_______   ____   \_____  \  /   _____/ 
+  /  /_\  \_  __ \_/ ___\   /   |   \ \_____  \  
+ /    |    \  | \/\  \___  /    |    \/        \ 
+ \____|__  /__|    \___  > \_______  /_______  / 
+         \/            \/          \/        \/  ]]
+term.setTextColor(colors.white)
 for i=1,#progressbar do
 term.setCursorPos(20,12)
 print(progressbar[i])
